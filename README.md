@@ -1,2 +1,2 @@
 # cv
-latex template of a cv
+Jianjun Ren's CV as Control Engineering Researcher
