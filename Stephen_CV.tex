@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stephen J. Ren CV
+% LaTeX Template
+% Version 1.1 (Modified 10/6/15)
+% email: jrenauto@foxmail.com
+%
+% This original template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+%-------------------------------------------------------------
+
+\newcommand{\redf}[1]{\textcolor[rgb]{1,0,0}{#1}}
+\newcommand{\bluef}[1]{\textcolor[rgb]{0,0.2,0.6}{#1}}
+
+
+\begin{document}
+
+%\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Stephen \textsc{J. Ren}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Shanxi, China  | 23 July 1991 \\
+\textsc{Address:} & 29 Jiangjun Road, Nanjing, Jiangsu, China \\
+\textsc{Phone:} & +86 158 9583 1215\\
+\textsc{Email:} & \href{mailto:jrenauto@foxmail.com}{jrenauto@foxmail.com}\\
+\textsc{BLOG:} & \href{http://www.cnblogs.com/pionerj}{http://www.cnblogs.com/pionerj}\\
+&\\
+\textsc{Motto:} & The very beginning mind itself is the most accomplished\\
+                & mind of true enlightenment.
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH AREAS
+%----------------------------------------------------------------------------------------
+
+\section{Research Areas}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Control} & Uncertain and non-linear systems, control engineering\\
+& \footnotesize{Disturbance observer-based control(DOBC), sliding-mode control(SMC), repetitive control (RC), model-predictive control (MPC), etc.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Power} & Permanent-magnet synchronous motors (PMSM), DC/AC converters\\
+& \footnotesize{Industrial servo applications, e.g. manipulators, grid-connected inverters in distributed generation (DG).}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+Expected & \textbf{Master Degree} in \textsc{Engineering} \\
+\textsc{Apr.} 2017 & Control Engineering, \textbf{Nanjing University of Aeronautics and Astronautics}\\
+& Major: Permanent-magnet AC servo system | \small Advisor: AProf. Yali \textsc{Xue}\\
+&\normalsize \textsc{Gpa}: 3.5/5.0\hyperlink{grds_me}{\hfill | \footnotesize Detailed List of Exams}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Jun.} 2014& \textbf{Bachelor Degree} in \textsc{}\textsc{Engineering} \\
+&Automation, \normalsize\textbf{Nanjing University of Aeronautics and Astronautics}\\
+& Major: Flight control system | \small Advisor: Prof. Yongqiang \textsc{Ye}\\
+&\normalsize \textsc{Gpa}: 3.8/5.0 \hyperlink{grds_be}{\hfill| \footnotesize Detailed List of Exams}
+
+%------------------------------------------------
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Jul. 2014 - May 2015} & Project Intern at \href{http://www.estun.cn/}{ESTUN Automation Technology Co. Ltd.}, Nanjing \emph{}\\
+& \footnotesize{This research aims at developing of deadbeat predictive control strategy to improve the dynamic performance of permanent-magnet ac servo drives. The control algorithm was implemented with C language running in TI TMS320F2812.}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS & LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Skills \& Languages}
+
+\begin{tabular}{rl}
+\textsc{Programs:} & MS Office, C/C++, MATLAB/Simulink/Stateflow, Simpower, SlidWorks,\\
+& VHDL/Verilog, \textsc{html/css}, SQL, JavaScript, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+
+\textsc{Techniques:} & Interfacing with microprocessors and actuators/sensors, data acquisition,\\
+& experimentation, PCB design, layout and fabrication.\\
+
+\textsc{Languages:} & Native in \textsc{Chinese}; Fluent in \textsc{English}; ABC in \textsc{Japanese}.
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Certificates}
+
+\begin{tabular}{rl}
+\textsc{Mar.} 2013 & National Computer Rank Examination (Database Technology), 3\textsuperscript{rd} Grade\\
+\textsc{Sept.} 2011 & Jiangsu Province Computer Rank Examination (C Language), Excellent
+
+%\textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH GRANTS
+%----------------------------------------------------------------------------------------
+
+\section{Research Grants}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{DEC. 2013 - May 2014} & DSP IP-cores Based SOPC and its Application to Controller\\
+& Grant from \href{http://ded.nuaa.edu.cn/srf/}{SFEP of NUAA} (ZT2013033), \textyen 4,000 (PI)\\
+& \footnotesize{To solve high resource occupation and complex hardware implementation of repetitive control in embedded control systems, a repetitive controller IP-core was designed  for FPGA/SOPC. From the perspective of control algorithm implementation, the repetitive controller IP-core structure was proposed to make it suited to Nios II and an Avalon slave interface was added which enabled it to be easily integrated.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jur. 2015 - Dec. 2018} & Analysis of Relationship Between RC and MPC, Controller\\
+& Design and their Applications to DC/AC Converters\\
+& Grant from \href{http://www.nsfc.gov.cn/}{NSFC} (61473145), \textyen 820,000\\
+& \footnotesize{The research is to developed some practical modifications for repetitive control schemes used in harmonic distortion compensation, e.g. stability, dynamic response issues. }\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jul. 2014 - May 2015} & Control of PMSM Drives with High Dynamic Performance\\
+& Grant from R\&D Center, ESTUN Automation Technology Co. Ltd.\\
+& \footnotesize{This project aims at developing of deadbeat predictive control algorithm for PMSM drives with both the zero steady-state error and the improved dynamic performance.}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\newcommand{\me}[1]{\textbf{#1}}
+\newcommand{\comaut}[1]{#1*}
+
+\textsc{Degree Thesis}
+
+\begin{enumerate}%[align=left,labelsep=0em]
+\renewcommand{\labelenumi}{[T\arabic{enumi}] }
+  \item Jianjun Ren. ``Power Line Communication Gateway Based on PL3150 Smart Transceiver,'' B.Eng. Thesis, Nanjing University of Aeronautics and Astronautics, 2014. (\emph{in Chinese with English abstract, \redf{Outstanding Undergraduate Thesis}})
+\end{enumerate}
+
+\vspace{0.2cm}
+\textsc{Academic Journal Papers}
+
+\begin{enumerate}%[align=left,labelsep=0em]
+\renewcommand{\labelenumi}{[J\arabic{enumi}] }
+  \item Yue Ji, \comaut{Yali Xue}, \me{Jianjun Ren}, Huazhen Yan, Yongqiang Ye, Yong Wan. ``Research on Robust Current Predictive Control Method for Permanent-Magnet Synchronous Motors Based on Input-Correction Strategy,'' \textbf{Journal of Systems Engineering and Electronics}, vol. xx, no. xx, pp. xxxx--xxxx,  xxxx. (\emph{in Chinese, to appear})
+\end{enumerate}
+
+\vspace{0.2cm}
+\textsc{Peer-reviewed Conference Papers}
+
+\begin{enumerate}%[align=left,labelsep=0em]
+\renewcommand{\labelenumi}{[C\arabic{enumi}] }
+  \item \comaut{Huazhen Yan}, \me{Jianjun Ren}, Yongqiang Ye and Yunpeng Xu. ``Design of repetitive controller IP-Core based on Avalon Fabric," In: Proceedings of The 2014 Academic Conference of Undergraduate Students of NUAA, Nanjing, China, 2014. (\emph{in Chinese, \redf{Best Paper Award}})
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	HONORS / AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Honors/Awards}
+
+\begin{tabular}{rl}
+\textsc{Oct.} 2013 & Merit Student of NUAA \\
+2011 - 2013 & Graduate Student Scholarship, 3\textsuperscript{rd} Place, every years \\
+\textsc{Oct.} 2011 & Outstanding Volunteer \\
+\textsc{Oct.} 2011 & National Endeavor Fellowship of China \\
+\textsc{Sept.} 2010 & Freshman Scholarship of NUAA \\
+\textsc{Apr.} 2010 & Rui-sheng Wu Scholarship \footnotesize(\redf{\textyen 10,000})\normalsize
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+State-of-the-art of Power Control Technology, Open-Source, Programming\\
+Reading, Calligraphy, Photography, Chinese kungfu, Travelling
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
